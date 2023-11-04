@@ -3,6 +3,8 @@ public class Array {
         int[] singleDimensionalArray=new int[10];
         int[][] twoDimensionalArray=new int[5][5];
 
+        int a=60;
+
         for(int i=0;i<10;i++){
             singleDimensionalArray[i]=i;
             System.out.println(singleDimensionalArray[i]);
@@ -21,6 +23,7 @@ public class Array {
             System.out.println();
             System.out.println();
         }
-
+        //operator Just try
+        System.out.println((a--+--a));
     }
 }
