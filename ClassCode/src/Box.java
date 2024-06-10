@@ -3,4 +3,8 @@ public class Box {
     double height;
     double depth;
 
+    // return Value
+    double volume(double width,double height,double depth){
+        return width*height*depth;
+    }
 }
