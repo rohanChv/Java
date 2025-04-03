@@ -1,15 +1,20 @@
+import java.util.Locale;
+
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        String firstString="Taki";
+        String secondString="TAKI";
+        System.out.println("String 1 is equal to  string 2 " + secondString.equalsIgnoreCase(firstString) );
+        Locale turkishString=Locale.forLanguageTag("tr-TR");
+        System.out.println("String 1 is equal to  string 2 " + secondString.toLowerCase(turkishString).equals(firstString.toLowerCase(turkishString)) );
+        Locale england=Locale.UK;
+        String color="color";
+        String colour="colour";
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
-        }
+        System.out.println("color is equal to  colour " + color.equals(colour.toLowerCase(england)));
+
+
     }
 }
